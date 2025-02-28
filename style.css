@@ -1,0 +1,251 @@
+body {
+    background-color: #082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+  }
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid black;
+}
+
+  /* make images flexible */
+  img {
+    max-width: 100%;
+  }
+  a {
+    color: #59331d;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  header {
+    border-bottom: 10px solid #d98555;
+    background-color: #082B59;
+  }
+  /* NAVBAR STYLING */
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #082B59;
+  }
+  nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+  }
+  /* max width on the image in pixels */
+  nav .logo img {
+    max-width: 150px;
+  }
+  /* flex basis on the image container, li */
+  nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  nav a:hover {
+    color: #d98555;
+  }
+  /* establishes a white background */
+  .main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+  }
+  /* sits inside of the white background, centered */
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  article {
+    flex-basis: 73%;
+  }
+  figure {
+    margin: 3rem 0 0 0;
+    flex-basis: 25%;
+    background-color: #59331d;
+    border-radius: 10px;
+  }
+  figure img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  figcaption {
+    color: #f2f2f2;
+    padding: 0.5rem;
+  }
+  .button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+  }
+  .button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+  }
+  footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+    background-color: #082B59;
+  }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+  }
+
+/* BORDER BOX */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* CONTAINER STYLE */
+.products-section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* SECTION TITLE */
+.products-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* PRODUCT GRID LAYOUT */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+/* PRODUCT IMAGE */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* PRODUCT TEXT */
+.product-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+  /* RESPONSIVE DESIGN FOR PRODUCTS PAGE  */
+  @media (min-width: 768px) {
+    .product-card {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .product-card img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-section h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .product-card {
+        text-align: center;
+    }
+
+    .product-card img {
+        width: 100%;
+    }
+}
+
+  /* RESPONSIVE DESIGN FOR ABOUT PAGE  */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main {
+        max-width: 100%;
+    }
+
+    .main img {
+        max-width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
